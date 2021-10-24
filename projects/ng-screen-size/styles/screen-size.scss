@@ -1,0 +1,31 @@
+@import url('./screen-size.scss');
+
+$XSmall: '(max-width: #{$smScreenWidth - 1px})';
+$Small: '(min-width: #{$smScreenWidth}) and (max-width: #{$mdScreenWidth - 1px})';
+$Medium: '(min-width: #{$smScreenWidth}) and (max-width: #{$lgScreenWidth - 1px})';
+$Large: '(min-width: #{$smScreenWidth}) and (max-width: #{$xlgScreenWidth - 1px})';
+$XLarge: '(min-width: #{$xlgScreenWidth})';
+
+@mixin xs {
+  @media (max-width: #{$smScreenWidth}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$mdScreenWidth}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$lgScreenWidth}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lgScreenWidth}) {
+    @content;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ng-screen-size": {
+      "projectType": "library",
+      "root": "projects/ng-screen-size",
+      "sourceRoot": "projects/ng-screen-size/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-screen-size/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-screen-size/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-screen-size/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        }
+      }
+    }
+  },
+  "defaultProject": "ng-screen-size"
+}
