@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "ng build ng-screen-size",
-    "publish": "cd dist/my-lib && npm publish"
+    "publish": "cd dist/ng-screen-size && npm publish"
   },
   "private": true,
   "dependencies": {
