@@ -1,4 +1,4 @@
-@import url('./screen-size.scss');
+@import  '~ng-screen-size/styles/breakpoints';
 
 $XSmall: '(max-width: #{$smScreenWidth - 1px})';
 $Small: '(min-width: #{$smScreenWidth}) and (max-width: #{$mdScreenWidth - 1px})';

@@ -1,0 +1,6 @@
+$smScreenWidth: 600px;
+$mdScreenWidth: 960px;
+$lgScreenWidth: 1280px;
+$xlgScreenWidth: 1920px;
+
+@import  '~ng-screen-size/styles/screen-size';

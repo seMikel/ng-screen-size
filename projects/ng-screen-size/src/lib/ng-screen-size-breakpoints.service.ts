@@ -34,7 +34,7 @@ export class NgScreenSizeBreakpointsService {
         ).subscribe((scss) => {
           if (scss) {
             Object.keys(this.config).forEach(key => {
-              var value = new RegExp(`${key}:(.*)px`).exec(scss)?.[1].trim();
+              const value = new RegExp(`${key}:(.*)px`).exec(scss)?.[1].trim();
               this.config[key as keyof Breakpoints] = value && +value || this.config[key as keyof Breakpoints];
             });
           }
